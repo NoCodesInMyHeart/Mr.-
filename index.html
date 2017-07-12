@@ -4,18 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mr.glasses'room</title>
-    <link rel="shortcut icon" type="image/x-icon" href="Mrglasses.ico" media="screen" />
-    <link rel="bookmark"  type="image/x-icon"  href="Mrglasses.ico"/>
+    <title>Mr.glasses</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Mrglasses.ico" media="screen"/>
+    <link rel="bookmark" type="image/x-icon" href="Mrglasses.ico"/>
     <link rel="apple-touch-icon" href="img/iphoneicon.png">
-    <link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+          rel="stylesheet"/>
+    <link href="../impress.js/css/impress-demo.css" rel="stylesheet"/>
 </head>
-<body class="container-fluid">
+<body class="impress-not-supported">
 
-<header></header>
-<footer></footer>
+<div class="fallback-message">
 
-<script src="libs/jquery-3.2.1.min.js"></script>
-<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <p>你该升级浏览器了！！ <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>这是我的个人主页</q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>用到的是impress.js框架</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>拿着就是干</q>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">你可以来试试</span>
+        <h1>impress.js<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup>。。。。。。。</span>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>腻不腻害？？</p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>炫不炫酷？？</p>
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>呵呵呵呵呵</p>
+    </div>
+
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>实在不知道说什么了</p>
+    </div>
+
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>拉阿拉拉拉阿拉啦啦啦啦啦啦啦</b></p>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>want to know more?</p>
+        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>one more thing...</p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">甚至</span> <span class="in">有</span> <b>3D<sup>*</sup></b>?</p>
+        <span class="footnote">* beat that, prezi ;)</span>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+<script src="../impress.js/js/impress.js"></script>
+<script>impress().init();</script>
 </body>
 </html>
